@@ -11,13 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from topaz device
 $(call inherit-product, device/xiaomi/topaz/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Project Elixir stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 
-PRODUCT_NAME := lineage_topaz
+PRODUCT_NAME := Elixir_topaz
 PRODUCT_DEVICE := topaz
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 12 4G
+TARGET_UNOFFICIAL_BUILD_ID := elkusanagi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
